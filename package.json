@@ -1,0 +1,36 @@
+{
+  "name": "book_web",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "create-vite": "^5.0.0",
+    "crisp-sdk-web": "^1.0.21",
+    "http-server": "^14.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
+    "react-router-dom": "^6.17.0",
+    "react-tooltip": "^5.21.5",
+    "sweetalert2": "^11.9.0",
+    "swiper": "^10.3.1",
+    "typewriter-effect": "^2.21.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "@vitejs/plugin-react-swc": "^3.3.2",
+    "eslint": "^8.44.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.1",
+    "vite": "^4.4.0"
+  }
+}

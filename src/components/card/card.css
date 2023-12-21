@@ -1,0 +1,129 @@
+.delete_div{
+    position: relative;
+}
+.card_section {
+    width: 13rem;
+    height: auto;
+    border: 2px solid var(--black111);
+    border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: var(--gray);
+}
+
+#dark .card_section {
+    border: solid var(--french-gray);
+}
+
+.card_section span {
+    font-size: .8rem;
+}
+.delete_cart{
+    position: absolute;
+    right: -.5rem;
+    top: -.7rem;
+    padding: .2rem;
+    font-size: 1.9rem !important;
+    color: var(--dark-red);
+    border-radius: 25rem;
+    -webkit-border-radius: 25rem;
+    -moz-border-radius: 25rem;
+    -ms-border-radius: 25rem;
+    -o-border-radius: 25rem;
+    background-color: var(--french-gray);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.card_img {
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.image_section:hover .card_img {
+    opacity: .3;
+}
+
+.btn_details {
+    padding: 0 1.5rem;
+    position: absolute;
+    font-size: 1rem !important;
+    border-radius: 25rem;
+    -webkit-border-radius: 25rem;
+    -moz-border-radius: 25rem;
+    -ms-border-radius: 25rem;
+    -o-border-radius: 25rem;
+    color: var(--french-gray);
+    background-color: var(--black111) !important;
+    transform: translate(-70%, 200%);
+    -webkit-transform: translate(-70%, 200%);
+    -moz-transform: translate(-70%, 200%);
+    -ms-transform: translate(-70%, 200%);
+    -o-transform: translate(-70%, 200%);
+    z-index: 2;
+    opacity: 0 !important;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.image_section:hover .btn_details {
+    opacity: 1 !important;
+    transform: translate(-75%, 500%);
+    -webkit-transform: translate(-75%, 500%);
+    -moz-transform: translate(-75%, 500%);
+    -ms-transform: translate(-75%, 500%);
+    -o-transform: translate(-75%, 500%);
+}
+
+.author_book {
+    color: var(--white);
+}
+
+.price {
+    color: var(--antiqua);
+}
+
+.btn_card {
+    font-size: 1rem !important;
+    width: 97%;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+    margin: 0 0 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+}
+
+#dark .btn_card {
+    background-color: var(--mint-green) !important;
+
+}
+
+#light .btn_card {
+    background-color: var(--red) !important;
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .card_section {
+        width: 11rem;
+    }
+}

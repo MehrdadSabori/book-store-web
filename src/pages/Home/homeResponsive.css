@@ -1,0 +1,124 @@
+@media only screen and (max-width: 1200px) {
+    .banner_text {
+        font-size: 2rem;
+    }
+
+    .banner_book_section {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .img_banner {
+        width: 12rem
+    }
+    .text_emailAddress{
+        font-size: 1.2rem;
+    }
+   
+}
+
+@media only screen and (min-width: 1140px) {
+    .swiper {
+        width: 90%;
+    }
+    .text_emailAddress {
+        width: 30%;
+    }
+
+    .inputsection_email {
+        width: 30rem;
+        padding: .5rem 1rem .5rem 2rem;
+
+    }
+}
+@media only screen and (min-width: 901px) {
+    .btn_banner:hover span::after {
+        opacity: 1;
+        transform:translate(-60%, 0);
+        -webkit-transform:translate(-60%, 0);
+        -moz-transform:translate(-60%, 0);
+        -ms-transform:translate(-60%, 0);
+        -o-transform:translate(-60%, 0);
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .banner_text {
+        font-size: 1.6rem;
+    }
+    .btn_banner {
+        width: 12rem;
+    }
+
+    .banner_book_section {
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .banner_contaner {
+        gap: 1rem;
+    }
+
+    .text_btn_svg_section {
+        width: 95%;
+    }
+
+    .banner_text {
+        justify-self: center;
+    }
+
+    .text_btn_svg_section {
+        grid-template-areas:
+            "text text text"
+            "btn btn img";
+    }
+
+    .btn_banner {
+        justify-self: center;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    .popular_text_icon {
+        align-self: center;
+    }
+
+    .swiper-slide-active {
+        width: 200px !important;
+    }
+
+    .big_icons_sections {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .Typewriter__wrapper {
+        font-size: 1rem;
+    }
+
+    .welcome_text {
+        font-size: .9rem;
+        margin: 0;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .banner_text {
+        font-size: 1.3rem;
+    }
+
+    .img_banner {
+        display: none;
+    }
+
+    .text_btn_svg_section {
+        gap: 1rem;
+        grid-template-areas:
+            "text text"
+            "btn btn";
+    }
+}

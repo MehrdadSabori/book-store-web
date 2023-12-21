@@ -1,0 +1,44 @@
+.scroll_to_top {
+    visibility: hidden;
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    bottom: .2rem;
+    right: 4rem;
+    border: 5px solid var(--cambridge-blue) !important;
+    border-radius: 25rem;
+    -webkit-border-radius: 25rem;
+    -moz-border-radius: 25rem;
+    -ms-border-radius: 25rem;
+    -o-border-radius: 25rem;
+    background-color: var(--french-gray) !important;
+    opacity: 0;
+    z-index: 888;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+#light .scroll_to_top {
+    background-color: var(--gray555) !important;
+}
+
+.scroll_to_top:hover {
+    border-color: var(--sky-blue) !important;
+}
+
+.showScrollTop {
+    visibility: visible;
+    bottom: 1.5rem;
+    opacity: 1;
+
+}
+@media only screen and (max-width: 768px) {
+    .scroll_to_top {
+        right: 2rem;
+        bottom: 1rem
+    }
+}

@@ -1,0 +1,26 @@
+/*---- show menu navbar active-- */
+.matte_background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black111);
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    opacity: .9;
+    z-index: 888;
+}
+
+ /* --- sweetAlert toast ---- */
+.dark-toast-container{
+    background: var(--black111) !important;
+}
+.title_toast{
+   font-weight: 500 !important;
+}
+.dark-toast-popup{
+    color: var(--white) !important;
+}
+/* --- end sweetAlert --- */

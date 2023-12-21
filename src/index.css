@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=Vazirmatn:wght@200;400;500&display=swap');
+
+:root {
+
+    --onyx: #353839;
+    --french-gray: #BEBFC5;
+    --white: #fdffff;
+    --black222: #222;
+    --black_opacity: #22222259;
+    --mint-green: #BEE3DB;
+    --cambridge-blue: #89B0AE;
+    --antiqua: #FFD6BA;
+    --gray: #77777779;
+    --gray555: #555;
+    --black111: #111;
+    --sky-blue: #00B3D1;
+    --red: #CC0101;
+    --dark-red: #810303;
+    --green: #008000;
+
+    /* -- swiper css style --- */
+    --swiper-navigation-size: 2rem;
+
+}
+
+/* --- scroll style ---- */
+::-webkit-scrollbar {
+    width: .3rem;
+    height: .5rem;
+    background-color: var(--gray555);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: var(--cambridge-blue);
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+/* --- end scroll --- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: El Messiri, sans-serif; */
+    font-family: Vazirmatn, sans-serif;
+    direction: rtl;
+}
+
+.btn {
+    text-align: center;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    background-color: #00000000;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+hr {
+    width: 95%;
+    background-color: var(--black111);
+    height: 1px;
+    border: none;
+    transform: translatex(-2.5%);
+    -webkit-transform: translatex(-2.5%);
+    -moz-transform: translatex(-2.5%);
+    -ms-transform: translatex(-2.5%);
+    -o-transform: translatex(-2.5%);
+}

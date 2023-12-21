@@ -1,0 +1,323 @@
+#dark .home_section {
+    background-color: var(--onyx);
+}
+
+#light .home_section {
+    background-color: var(--french-gray);
+}
+
+
+#dark .cover_header {
+    background-image: linear-gradient(180deg, var(--onyx), transparent), linear-gradient(0deg, var(--onyx), transparent), url('/src/assets/tengyart-zLETygkHMvQ-unsplash.jpg');
+}
+
+#light .cover_header {
+    background-image: linear-gradient(180deg, var(--french-gray), transparent), linear-gradient(0deg, var(--french-gray), transparent), url('/src/assets/tengyart-zLETygkHMvQ-unsplash.jpg');
+}
+
+.cover_header {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-position: center center;
+}
+
+.cover_header>* {
+    margin: 2rem 0 1rem;
+}
+
+#dark .headertext {
+    color: var(--antiqua);
+}
+
+#light .headertext {
+    color: var(--sky-blue);
+    text-shadow: 0px 1px 1px var(--black111);
+}
+
+.Typewriter__wrapper {
+    font-family: El Messiri, sans-serif;
+}
+
+.Typewriter__cursor {
+    color: var(--gray);
+    font-weight: 100;
+}
+
+
+.welcome_text {
+    color: var(--gray555);
+}
+
+.big_icons_sections {
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.big_icons_sections span {
+    display: block;
+    font-size: clamp(.8rem, 1vw, 1.2rem);
+}
+
+.big_icons_sections :not(span) {
+    font-size: clamp(2.5rem, 3vw, 4rem);
+}
+
+#dark .big_icon>* {
+    color: var(--white);
+}
+.big_icon{
+    width: 25%;
+    min-width: 7rem;
+}
+
+.popular_section {
+    width: 80%;
+    margin: 2rem auto 0;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    gap: 1rem;
+}
+
+.popular_text_icon h4 {
+    font-weight: 400;
+}
+
+.popular_text_icon {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    cursor: pointer;
+}
+
+.popular_text_icon:hover {
+    color: var(--dark-red);
+    transform: translateY(5px);
+}
+
+#dark .popular_text_icon:hover {
+    color: var(--antiqua);
+}
+
+.swiper {
+    width: 100%;
+    height: 26rem;
+}
+
+.swiper-slide {
+    text-align: center;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bg_popular {
+    padding: 2rem 1% 0;
+    border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
+}
+
+#dark .bg_popular {
+    background-color: var(--black_opacity);
+}
+
+#light .bg_popular {
+    background-color: var(--gray);
+}
+
+/* ---- banner book ↓↓↓  */
+.banner_contaner {
+    padding: 3vw 1vw;
+    margin: 1rem 0 0;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--black111);
+    background: linear-gradient(180deg, transparent -10%, var(--black111))
+}
+
+.text_btn_svg_section {
+    width: 45%;
+    display: grid;
+    grid-template-areas:
+        "text text text"
+        "img btn btn";
+}
+
+.banner_text {
+    justify-self: end;
+    grid-area: text;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--antiqua);
+}
+
+.percent_banner {
+    color: var(--red);
+}
+
+.img_banner {
+    grid-area: img;
+}
+
+.btn_banner {
+    grid-area: btn;
+    justify-self: flex-start;
+    align-self: center;
+    width: 15rem;
+    height: 3rem;
+    background-color: var(--mint-green) !important;
+    border-radius: 0.3rem;
+}
+
+.btn_banner span::after {
+    content: '←';
+    position: absolute;
+    opacity: 0;
+    transform:translate(-100%, 0);
+    -webkit-transform:translate(-100%, 0);
+    -moz-transform:translate(-100%, 0);
+    -ms-transform:translate(-100%, 0);
+    -o-transform:translate(-100%, 0);
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+.banner_book_section {
+    width: 25rem;
+    height: 25rem;
+    border: 2px solid var(--french-gray);
+    border-radius: 25rem;
+    -webkit-border-radius: 25rem;
+    -moz-border-radius: 25rem;
+    -ms-border-radius: 25rem;
+    -o-border-radius: 25rem;
+    background-color: var(--gray);
+    overflow: hidden;
+}
+
+.banner_book_section img {
+    width: 70%;
+    height: 75%;
+    transform: translate(-25%, 20%);
+    -webkit-transform: translate(-25%, 20%);
+    -moz-transform: translate(-25%, 20%);
+    -ms-transform: translate(-25%, 20%);
+    -o-transform: translate(-25%, 20%);
+}
+
+/* ---- banner end ---  */
+
+
+/* ---- email address start ---- */
+.emailAddress_section {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    align-items: center;
+    padding: 3vw;
+}
+
+.text_emailAddress {
+    text-align: center;
+    font-weight: 700;
+}
+
+#dark .text_emailAddress {
+    color: var(--french-gray);
+}
+
+#light .text_emailAddress {
+    color: #555;
+}
+
+.text_emailAddress span {
+    color: var(--mint-green);
+    text-shadow: 0px 1px 1px var(--black111);
+}
+
+.inputsection_email {
+    direction: ltr;
+    width: 16rem;
+    padding: .5rem 1rem .5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+}
+
+#dark .inputsection_email {
+    border: 2px solid var(--mint-green);
+}
+
+#light .inputsection_email {
+    border: 2px solid var(--dark-red);
+}
+
+#light .email_input {
+    color: var(--black111);
+}
+
+.email_input {
+    all: unset;
+    width: 90%;
+    direction: ltr;
+    color: var(--french-gray);
+}
+
+#dark .email_input_icon {
+    color: var(--mint-green);
+}
+
+#light .email_input_icon {
+    color: var(--dark-red);
+}
+
+.email_input_icon {
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+    -webkit-transition: transform .2s ease-in-out;
+    -moz-transition: transform .2s ease-in-out;
+    -ms-transition: transform .2s ease-in-out;
+    -o-transition: transform .2s ease-in-out;
+}
+
+.email_input_icon:hover {
+    transform: translate(20%, 0);
+    -webkit-transform: translate(20%, 0);
+    -moz-transform: translate(20%, 0);
+    -ms-transform: translate(20%, 0);
+    -o-transform: translate(20%, 0);
+}
+
+
+/* ---- email address end ---- */
